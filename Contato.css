@@ -1,0 +1,98 @@
+input {
+    padding: 5px 5px 5px 5px;
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+    border-left: solid 2px black;
+    border-right: solid 2px black;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align: left;
+}
+
+textarea {
+    padding: 5px 5px 5px 5px;
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+    border-left: solid 2px black;
+    border-right: solid 2px black;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align: left;
+}
+
+input:focus {
+    background: rgb(212, 211, 211);
+}
+
+textarea:focus {
+    background: rgb(212, 211, 211);
+}
+
+input:required {
+    background: red;
+}
+
+textarea:required {
+    background: red;
+}
+
+input::selection {
+    color: white;
+    background: blue;
+}
+
+textarea::selection {
+    color: white;
+    background: blue;
+}
+
+input[type=email]:invalid {
+    background: rgb(226, 75, 75);
+}
+
+input[type=tel]:invalid {
+    background: rgb(226, 75, 75);
+}
+
+::placeholder {
+    color: black;
+}
+
+li:visited {
+    color: red;
+}
+
+h1 {
+    font-size: 35px;
+}
+
+p {
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li:active {
+    color: orange;
+}
+
+ul li::marker {
+    color: black;
+}
+
+img {
+    transform: rotateY(180deg);
+    animation-duration: 2s;
+    animation-name: logo;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes logo {
+    0% {
+       transform: rotateY(0deg)
+    }
+
+    100% {
+        transform: rotateY(360deg);
+    }
+}
